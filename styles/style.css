@@ -1,0 +1,334 @@
+/* 
+    BASE 
+*/
+
+body{
+    margin: 0;
+    background-color: black;
+    color:white;
+
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+    BUTTON 
+*/
+
+.button-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-box .button{
+    margin-left: 20px;
+}
+
+.button-box .button:first-child{
+    margin-left: 0;
+}
+
+.button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1a1a1a;
+    border-radius: 25px;
+
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.highlight{
+    background-color: white;
+    color:black;
+}
+
+
+/* 
+    INTRO 
+*/
+
+.page-title{
+    font-weight: 600;
+    font-size: 48px;
+
+    align-self: center;
+}
+
+.page-intro{
+    margin-top: 30vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-intro .title{
+    font-size: 5vw;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.page-intro .description{
+    margin-top: 40px;
+    width: 40vw;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+}
+
+.page-intro .button-box{
+    margin-top: 60px;
+}
+
+.page-intro .button-box .button:first-child{
+    background-color: white;
+    color:black;
+    margin-left: 0;
+}
+
+
+/* 
+    ABOUT 
+*/
+
+.about{
+    margin-top: 20vh;
+    width: 80%;
+    height: 50%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about img{
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 40%;
+    max-width: 50%;
+}
+
+.about-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text .title{
+    font-weight: 600;
+    font-size: 4vw;
+    margin-top: 10vh;
+}
+
+.about-text .description{
+    margin-top: 0;
+
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.about-text .button{
+    margin-top: 5vh;
+}
+
+.box{
+    width: 45%;
+}
+
+.box p{
+    font-weight: 450;
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+
+/* 
+    CONTENT 
+*/
+
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.content .title{
+    font-weight: 600;
+    font-size: 2.5vw;
+    
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+.content .big-title{
+    font-weight: 600;
+    font-size: 3vw;
+    
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+.content .description{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    
+    margin-left: 10vw;
+}
+
+.content .button-box{
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+
+.experience-content{
+    margin-top: 30vh;
+    margin-left: 10vw;
+    margin-right: 10vw
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 10vh;
+}
+
+.experience .title{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.experience .date{
+    margin-top: .1vh;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 1vw;
+    color: #A3A3A3;
+}
+
+.experience .description{
+    margin-top: 5vh;
+
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+
+
+.image{
+    width: 50%;
+}
+
+.placeholder{
+    margin-top: 30vh;
+    margin-left: 10vw;
+    background-color: #1a1a1a;
+    width: 60%;
+    height: 50%;
+}
+
+
+/* 
+    ICONS 
+*/
+
+.icon-content-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-content-wrapper h1{
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+
+    margin-top: 30vh;
+}
+
+.icon-wrapper{
+    width: 70%;
+    margin-top: 10vh;
+    align-self: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon h1{
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 600;
+    
+    margin-top: 1vh;
+}
+
+.icon p{
+    font-weight: 400;
+    text-align: center;
+    color:#A3A3A3;
+    font-size: 0.8vw;
+
+    margin: 0;
+}
+
+.icon img{
+    align-self: center;
+    max-width: 5vw;
+    max-height: 10vh;
+    border-radius: 1.2vw;
+}
+
+
+/* 
+    FOOTER 
+*/
+
+.footer{
+    height: 5vh;
+    width: 50%;
+    margin-bottom: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    
+    color: #A3A3A3; 
+    font-size: 1vw;
+    line-height: 26px;
+}
