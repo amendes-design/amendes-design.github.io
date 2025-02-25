@@ -58,8 +58,10 @@ body *{
     background-color: #1a1a1a;
     border-radius: 25px;
 
+    color:white;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .highlight{
@@ -251,7 +253,7 @@ body *{
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: 400;
-    font-size: .8   vw;
+    font-size: .8vw;
     color: #A3A3A3;
 }
 
@@ -341,6 +343,91 @@ body *{
 
 
 /* 
+    NAVBAR 
+*/
+
+.navbar{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    margin-top: 5vh;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.navbar p, .navbar a{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+}
+
+.navbar .menu-button{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    background-color: #1a1a1a;
+
+    transition: .2s;
+}
+
+.navbar .menu-button:hover{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.navbar-content{
+    visibility: collapse;
+    display: flex;
+    justify-content: space-around;
+
+    width: 12vw;    
+    background-color: #1a1a1a;
+
+    transition: width .2s ;
+}
+
+.navbar-content a{
+    visibility: collapse;
+}
+
+.navbar-content.show{
+    visibility: visible;
+    border-radius: 30px;
+    width: 20vw;
+}
+
+.navbar-content.show a{
+    visibility: visible;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+
+    align-self: center;
+    background-color: #1a1a1a;
+}
+
+.navbar-content.show a:hover{
+    background-color: #2a2a2a;;
+}
+
+/* 
     FOOTER 
 */
 
@@ -354,7 +441,9 @@ body *{
     flex-direction: row;
     justify-content: space-around;
     align-self: center;
-    
+}
+
+.footer p{
     color: #A3A3A3; 
     font-size: calc(10px + 0.5vw);
     line-height: 26px;
