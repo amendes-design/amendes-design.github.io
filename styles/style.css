@@ -354,6 +354,11 @@ body *{
         margin-bottom: 5vh;
     }
 
+    .page-title{
+        margin-top: 10vh;
+        font-size: 38px;
+    }
+
     .page:first-child{
         margin-top: 5vh;
         height:100vh
