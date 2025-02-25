@@ -349,6 +349,15 @@ body *{
 */
 
 @media only screen and (max-width: 600px) {
+    .page{
+        height: auto;
+        margin-bottom: 10vh;
+    }
+
+    .page:first-child{
+        margin-top: 20vh;
+    }
+    
     .page-intro .title {
         font-size: 50px;
         text-align: center;
@@ -368,11 +377,9 @@ body *{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        /* background-color: yellow; */
     }
 
     .content{
-        /* background-color: aqua; */
         width: 80vw;
     }
 
@@ -401,7 +408,7 @@ body *{
 
     .icon-content{
         width: 80vw;
-        margin-top: 20vh;
+        margin-top: 10vh;
         flex-wrap: wrap;
     }
 
@@ -430,6 +437,7 @@ body *{
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        margin:0;
     }
 
     .experience-content .big-title{
@@ -468,7 +476,7 @@ body *{
         width:80vw;
         justify-content: center;
         align-items: center;
-        margin-top: 80px;
+        margin-top: 0px;
     }
 
     .about img{
@@ -476,7 +484,7 @@ body *{
         
         width: 80vw;
         height: 80vw;
-        margin-top: 80px;
+        margin-top: 50px;
 
         object-fit: cover;
     }
@@ -507,7 +515,7 @@ body *{
     }
     
     .about-box{
-        height: 100%;
+        height: auto;
         align-content: center;
         margin-top: 0;
     }

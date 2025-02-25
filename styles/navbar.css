@@ -84,3 +84,16 @@
     background-color: #2a2a2a;;
 }
 
+@media only screen and (max-width: 600px) {
+    
+    .navbar-content{
+        width:80vw;
+    }
+
+    .navbar-content.show a{
+        font-size: 12px;
+
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
