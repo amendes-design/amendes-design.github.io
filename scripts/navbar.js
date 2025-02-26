@@ -1,9 +1,18 @@
 const isMobile = isMobileCheck();
 var menuButton = document.getElementsByClassName('menu-button')[0];
+var navbar = document.getElementsByClassName('navbar')[0];
 
 if(isMobile){
     enableMenu();
 }
+
+document.addEventListener('click', event => {
+    var isClickInside = navbar.contains(event.target);
+
+    if(!isClickInside){
+        disableMenu();
+    }
+});
 
 menuButton.onclick = function(){
     if(!isMobile){
@@ -18,6 +27,11 @@ function isMobileCheck(){
   };
 
 function enableMenu(){
-    document.getElementsByClassName('menu-button')[0].style.display = 'none';
+    document.getElementsByClassName('menu-button')[0].style.visibility = 'collapse';
     document.getElementsByClassName('navbar-content')[0].classList.add('show');
+}
+
+function disableMenu(){
+    document.getElementsByClassName('menu-button')[0].style.visibility = 'visible';
+    document.getElementsByClassName('navbar-content')[0].classList.remove('show');
 }
