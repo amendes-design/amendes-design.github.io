@@ -42,6 +42,7 @@
 .navbar-content{
     visibility: collapse;
     display: flex;
+    align-self: center;
     justify-content: space-around;
 
     width: 0vw;    
