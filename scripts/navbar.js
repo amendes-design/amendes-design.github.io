@@ -4,12 +4,14 @@ var navbar = document.getElementsByClassName('navbar')[0];
 
 if(isMobile){
     enableMenu();
+    //disable menu button
+    menuButton.style.display = 'none';
 }
 
 document.addEventListener('click', event => {
     var isClickInside = navbar.contains(event.target);
 
-    if(!isClickInside){
+    if(!isClickInside && !isMobile){
         disableMenu();
     }
 });
