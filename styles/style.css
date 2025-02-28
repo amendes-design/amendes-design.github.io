@@ -325,6 +325,69 @@ body * {
 }
 
 
+/* 
+    GEAR 
+*/
+
+.content-wrapper.gear {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-wrapper.gear .title {
+    margin-bottom: 10vh;
+}
+
+.content.gear{
+    width: 80vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content .gear{
+    width: 15vw;
+    min-width: 250px;
+    margin: 50px 20px;
+}
+
+.gear .image{
+    width: 100%;
+    height: fit-content;
+}
+
+.gear .image img{
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content .gear .title{
+    max-width: 100%;
+    margin-top: 1vh;
+
+    text-align: left;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: calc(20px + 1vw);
+}
+
+.gear .description {
+    max-width: 100%;
+    margin-top:  -50px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(12px + 1vw);
+}
+
+
+/* 
+    TEST 
+*/
+
 .aqua {
     background-color: aqua;
 }
@@ -530,5 +593,16 @@ body * {
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
+    }
+
+
+    .gear .title{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .gear .description{
+        margin-top: -50px;
+        padding: 0;
     }
 }
