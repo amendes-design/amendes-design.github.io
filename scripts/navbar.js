@@ -30,10 +30,14 @@ function isMobileCheck(){
 
 function enableMenu(){
     document.getElementsByClassName('menu-button')[0].style.visibility = 'collapse';
-    document.getElementsByClassName('navbar-content')[0].classList.add('show');
+    document.getElementsByClassName('navbar-content')[0].classList.add('active');
+    document.getElementsByClassName('more')[0].classList.add('active');
+
+    // setInterval(disableMenu, 10000);
 }
 
 function disableMenu(){
     document.getElementsByClassName('menu-button')[0].style.visibility = 'visible';
-    document.getElementsByClassName('navbar-content')[0].classList.remove('show');
+    document.getElementsByClassName('navbar-content')[0].classList.remove('active');
+    document.getElementsByClassName('more')[0].classList.remove('active');
 }
