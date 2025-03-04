@@ -7,7 +7,7 @@
     width: 100dvw;
     height: fit-content;
     position: fixed;
-    margin-top: 3vh;
+    margin-top: 4vh;
     
     display: flex;
     flex-direction: row;
@@ -22,7 +22,7 @@
     font-weight: 600;
     font-size: 14px;
     color:white;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .navbar .menu-button{
@@ -30,51 +30,46 @@
     border-radius: 30px;
     background-color:rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-
-    transition: all 50ms;
 }
 
 .navbar .menu-button:hover{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 30px;
 }
 
 .navbar-content{
     visibility: collapse;
     display: flex;
     justify-content: space-around;
+    width: 0px;
 
-    width: 20px;    
+    border-radius: 30px;
     background-color:rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     
-    transition: width 500ms;
+    overflow: hidden;
+    transition: width 300ms;
 }
 
 .navbar-content a{
     visibility: collapse;
-    transition: visibility 0ms;
+    padding: 10px 15px;
+    margin: 10px 10px;
+    border-radius: 25px;
+
+    overflow: hidden;
+    text-wrap: nowrap;
+    align-self: center;
+    background-color: transparent;
 }
 
 .navbar-content.show{
     visibility: visible;
-    width: fit-content;
-
-    padding: 0 10px;
-    border-radius: 30px;
+    width: 400px;
+    max-width: fit-content;
 }
 
 .navbar-content.show a{
     visibility: visible;
-    
-    padding: 10px 15px;
-    margin: 10px 5px;
-    border-radius: 25px;
-
-    align-self: center;
-    background-color: transparent;
-    
-    transition: all 250ms;
 }
 
 .navbar-content.show a:hover{
