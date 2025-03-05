@@ -399,7 +399,7 @@ body * {
     width: calc(80vw);
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .logo{
