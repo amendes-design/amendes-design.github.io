@@ -36,7 +36,7 @@ body * {
     align-self: center;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -48,12 +48,12 @@ body * {
     flex-direction: column;
 }
 
-.center-content{
+.center-content {
     justify-content: center;
     align-content: center;
 }
 
-.space-content{
+.space-content {
     justify-content: space-around;
     align-content: center;
 }
@@ -97,66 +97,66 @@ body * {
     TEXT 
 */
 
-.txt-button{
+.txt-button {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
 }
 
-.txt-extra-small{
+.txt-extra-small {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.25rem;
 }
 
-.txt-small{
+.txt-small {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.5rem;
 }
 
-.txt-medium{
+.txt-medium {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.625rem;
 }
 
-.txt-large{
+.txt-large {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 2rem;
 }
 
 /* h4 */
-.txt-title-extra-small{
+.txt-title-extra-small {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
 }
 
 /* h3 */
-.txt-title-small{
+.txt-title-small {
     font-size: 2rem;
     font-weight: 600;
     line-height: 2.875rem;
 }
 
 /* h2 */
-.txt-title-medium{
+.txt-title-medium {
     font-size: 3rem;
     font-weight: 600;
     line-height: 4rem;
 }
 
 /* h1 */
-.txt-title-large{
+.txt-title-large {
     font-size: 4rem;
     font-weight: 600;
     line-height: 4.75rem;
 }
 
 /* big title */
-.txt-title-extra-large{
+.txt-title-extra-large {
     font-size: 6rem;
     font-weight: 600;
     line-height: 7rem;
@@ -235,7 +235,7 @@ body * {
     BIO
  */
 
-.content-wrapper.bio{
+.content-wrapper.bio {
     align-items: flex-start;
 }
 
@@ -351,24 +351,24 @@ body * {
     margin-bottom: 80px;
 }
 
-.content.gear{
+.content.gear {
     width: 80vw;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.content .gear{
+.content .gear {
     width: 15vw;
     min-width: 250px;
     margin: 50px 20px;
 }
 
-.gear .image{
+.gear .image {
     width: 100%;
     height: fit-content;
 }
 
-.gear .image img{
+.gear .image img {
     max-width: 100%;
     width: 100%;
     min-width: 100%;
@@ -376,7 +376,7 @@ body * {
     object-fit: cover;
 }
 
-.content .gear .title{
+.content .gear .title {
     max-width: 100%;
     margin-top: 1vh;
 
@@ -385,24 +385,24 @@ body * {
 
 .gear .description {
     max-width: 100%;
-    margin-top:  -50px;
+    margin-top: -50px;
     text-align: left;
 }
 
 /* 
     LOGOS
 */
-.content-wrapper.logos{
+.content-wrapper.logos {
     justify-content: center;
 }
 
-.content.logos{
+.content.logos {
     width: 80vw;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.logo{
+.logo {
     width: 20vw;
     max-width: fit-content;
     margin: 50px;
@@ -428,6 +428,78 @@ body * {
 */
 
 @media only screen and (max-width: 600px) {
+
+    /* 
+        TEXT 
+    */
+
+    .txt-button {
+        font-size: 0.938rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+    .txt-extra-small {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.125rem;
+    }
+
+    .txt-small {
+        font-size: 0.813rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+    }
+
+    .txt-medium {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+    }
+
+    .txt-large {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.625rem;
+    }
+
+    /* h4 */
+    .txt-title-extra-small {
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+    }
+
+    /* h3 */
+    .txt-title-small {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2.25rem;
+    }
+
+    /* h2 */
+    .txt-title-medium {
+        font-size: 2.25rem;
+        font-weight: 600;
+        line-height: 2.75rem;
+    }
+
+    /* h1 */
+    .txt-title-large {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 4rem;
+    }
+
+    /* big title */
+    .txt-title-extra-large {
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 4rem;
+    }
+
+
+
     .page {
         height: auto;
         margin-bottom: 5vh;
@@ -460,7 +532,7 @@ body * {
         margin-top: 5vh;
         margin-bottom: 5vh;
 
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
         justify-content: center;
         align-items: center;
     }
@@ -476,7 +548,7 @@ body * {
 
     .content .description {
         font-size: 16px;
-        font-weight:normal;
+        font-weight: normal;
     }
 
     .image {
@@ -585,6 +657,7 @@ body * {
 
     .about {
         width: 80vw;
+        flex-direction: column-reverse;
     }
 
     .about .title {
@@ -610,23 +683,23 @@ body * {
     }
 
 
-    .gear .title{
+    .gear .title {
         margin: 0px;
         padding: 0px;
     }
 
-    .gear .description{
+    .gear .description {
         margin-top: -50px;
         padding: 0;
     }
 
-    .content.logos{
+    .content.logos {
         width: 80vw;
         justify-content: space-around;
     }
 
-    .logo{
+    .logo {
         width: 25vw;
-        margin:20px;
+        margin: 20px;
     }
 }
