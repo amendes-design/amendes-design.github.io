@@ -190,6 +190,15 @@ body * {
 
 
 /* 
+    BIO
+ */
+
+.content-wrapper.bio{
+    align-items: flex-start;
+}
+
+
+/* 
     EXPERIENCE 
 */
 
