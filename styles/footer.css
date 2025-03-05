@@ -11,12 +11,13 @@
     align-self: center;
 }
 
-.footer p{
+.footer p, .footer a{
     margin: 0 20px;
 
     color: #A3A3A3; 
     font-size: 16px;
     line-height: 26px;
+    text-decoration: none;
 }
 
 
@@ -30,7 +31,7 @@
         align-items: center;
     }
 
-    .footer p{
+    .footer p, .footer a{
         margin:10px;
     }
 }
