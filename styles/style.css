@@ -379,6 +379,27 @@ body * {
     line-height: calc(12px + 1vw);
 }
 
+/* 
+    LOGOS
+*/
+.content-wrapper.logos{
+    justify-content: center;
+}
+
+.content.logos{
+    width: calc(80vw);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.logo{
+    width: 20vw;
+    max-width: fit-content;
+    margin: 50px;
+}
+
+
 
 /* 
     TEST 
