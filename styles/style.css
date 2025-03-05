@@ -22,17 +22,8 @@ body * {
     COMMON 
 */
 
-.wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
 .page {
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .page:has(.intro),
@@ -45,6 +36,10 @@ body * {
     align-self: center;
 }
 
+.flex{
+    display: flex;
+}
+
 .row {
     flex-direction: row;
 }
@@ -53,15 +48,22 @@ body * {
     flex-direction: column;
 }
 
+.center-content{
+    justify-content: center;
+    align-content: center;
+}
+
+.space-content{
+    justify-content: space-around;
+    align-content: center;
+}
+
 /* 
     BUTTON 
 */
 
 .button-wrapper {
     margin-top: 5vh;
-
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -168,8 +170,6 @@ body * {
 .intro {
     width: 50vw;
 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -217,17 +217,11 @@ body * {
     margin-top: 20vh;
     margin-bottom: 20vh;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
 .content {
     width: 35vw;
-
-    display: flex;
-    flex-direction: column;
     align-items: start;
 }
 
@@ -253,8 +247,6 @@ body * {
 .experience {
     width: 80vw;
 
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-content: start;
     text-align: left;
@@ -264,8 +256,6 @@ body * {
     width: 30vw;
     margin-bottom: 10vh;
 
-    display: flex;
-    flex-direction: column;
     justify-content: left;
 }
 
@@ -279,8 +269,6 @@ body * {
 
 .experience-item .description {
     margin-top: 2vh;
-
-    line-height: 25px;
 }
 
 .image {
@@ -298,11 +286,6 @@ body * {
     ICONS 
 */
 
-.content-wrapper.icons {
-    flex-direction: column;
-    justify-content: center;
-}
-
 .content-wrapper.icons .title {
     margin-bottom: 10vh;
 }
@@ -311,8 +294,6 @@ body * {
     width: 80vw;
     margin-top: 10vh;
 
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -365,10 +346,6 @@ body * {
     GEAR 
 */
 
-.content-wrapper.gear {
-    flex-direction: column;
-    justify-content: center;
-}
 
 .content-wrapper.gear .title {
     margin-bottom: 80px;
@@ -377,7 +354,6 @@ body * {
 .content.gear{
     width: 80vw;
     justify-content: space-evenly;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -405,14 +381,12 @@ body * {
     margin-top: 1vh;
 
     text-align: left;
-    line-height: calc(20px + 1vw);
 }
 
 .gear .description {
     max-width: 100%;
     margin-top:  -50px;
     text-align: left;
-    line-height: calc(12px + 1vw);
 }
 
 /* 
@@ -423,8 +397,7 @@ body * {
 }
 
 .content.logos{
-    width: calc(80vw);
-    flex-direction: row;
+    width: 80vw;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -481,7 +454,6 @@ body * {
         width: 100%;
         font-size: 16px;
         font-weight: 400;
-        line-height: 25px;
     }
 
     .content-wrapper {
@@ -491,8 +463,6 @@ body * {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-
-        line-height: 25px;
     }
 
     .content {
@@ -507,7 +477,6 @@ body * {
     .content .description {
         font-size: 16px;
         font-weight:normal;
-        line-height: 28px;
     }
 
     .image {
@@ -596,8 +565,6 @@ body * {
     }
 
     .experience .experience-item .description {
-        font-size: 16px;
-        line-height: 28px;
         margin-top: 15px;
         margin-bottom: 0px;
     }
@@ -629,8 +596,6 @@ body * {
     }
 
     .about .description {
-        line-height: 20px;
-        font-size: 15px;
         text-align: center;
     }
 
@@ -642,9 +607,6 @@ body * {
 
     .about .box p {
         margin: 0;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
     }
 
 
