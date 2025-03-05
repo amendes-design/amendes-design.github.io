@@ -41,9 +41,6 @@ body * {
 }
 
 .page .title {
-    font-weight: 600;
-    font-size: 48px;
-
     justify-self: center;
     align-self: center;
 }
@@ -93,6 +90,77 @@ body * {
     color: black;
 }
 
+
+/* 
+    TEXT 
+*/
+
+.txt-button{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.txt-extra-small{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.txt-small{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.txt-medium{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.txt-large{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+/* h4 */
+.txt-title-extra-small{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+/* h3 */
+.txt-title-small{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.875rem;
+}
+
+/* h2 */
+.txt-title-medium{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+/* h1 */
+.txt-title-large{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.75rem;
+}
+
+/* big title */
+.txt-title-extra-large{
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 7rem;
+}
+
+
 /* 
     INTRO 
 */
@@ -107,8 +175,6 @@ body * {
 }
 
 .intro .title {
-    font-size: 64px;
-    font-weight: 600;
     align-self: center;
     text-align: center;
 }
@@ -116,11 +182,6 @@ body * {
 .intro .description {
     width: 32vw;
     margin-top: 40px;
-
-    font-size: 18px;
-    /* 18px */
-    font-weight: 400;
-    line-height: calc(10px + 1vw);
     text-align: center;
 }
 
@@ -174,20 +235,7 @@ body * {
     margin-bottom: 3vh;
 
     align-self: flex-start;
-    font-weight: 600;
-    font-size: 2.5vw;
-    /*32px*/
-
 }
-
-.content .description {
-    font-weight: 400;
-    font-size: 18px;
-    /* 18px */
-    line-height: calc(12px + 1vw);
-    /* 32px */
-}
-
 
 /* 
     BIO
@@ -212,11 +260,6 @@ body * {
     text-align: left;
 }
 
-.experience .title {
-    font-weight: 600;
-    font-size: 48px;
-}
-
 .experience-item {
     width: 30vw;
     margin-bottom: 10vh;
@@ -228,23 +271,15 @@ body * {
 
 .experience-item .title {
     margin-bottom: 0px;
-
-    font-size: 24px;
-    font-weight: 600;
 }
 
 .experience-item .date {
-
-    font-weight: 400;
-    font-size: 14px;
     color: #A3A3A3;
 }
 
 .experience-item .description {
     margin-top: 2vh;
 
-    font-weight: 400;
-    font-size: 18px;
     line-height: 25px;
 }
 
@@ -309,16 +344,12 @@ body * {
     margin-top: 1vh;
 
     text-align: center;
-    font-size: 24px;
-    font-weight: 600;
 }
 
 .icon p {
     margin-top: 1vh;
-    font-weight: 400;
     text-align: center;
     color: #A3A3A3;
-    font-size: 14px;
 }
 
 .icon img {
@@ -340,7 +371,7 @@ body * {
 }
 
 .content-wrapper.gear .title {
-    margin-bottom: 10vh;
+    margin-bottom: 80px;
 }
 
 .content.gear{
@@ -374,8 +405,6 @@ body * {
     margin-top: 1vh;
 
     text-align: left;
-    font-weight: 600;
-    font-size: 24px;
     line-height: calc(20px + 1vw);
 }
 
@@ -383,8 +412,6 @@ body * {
     max-width: 100%;
     margin-top:  -50px;
     text-align: left;
-    font-weight: 400;
-    font-size: 18px;
     line-height: calc(12px + 1vw);
 }
 
@@ -407,7 +434,6 @@ body * {
     max-width: fit-content;
     margin: 50px;
 }
-
 
 
 /* 
