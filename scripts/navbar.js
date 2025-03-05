@@ -38,12 +38,14 @@ function enableMenu(){
 }
 
 function disableMenu(){
-    document.getElementsByClassName('menu-button')[0].style.visibility = 'visible';
-    document.getElementsByClassName('navbar-content')[0].classList.remove('active');
-    document.getElementsByClassName('more')[0].classList.remove('active');
+    if(!isMobile){
+        document.getElementsByClassName('menu-button')[0].style.visibility = 'visible';
+        document.getElementsByClassName('navbar-content')[0].classList.remove('active');
+        document.getElementsByClassName('more')[0].classList.remove('active');
 
-    if(this.interval_close_navbar != null){
-        clearInterval(this.interval_close_navbar);
-        this.interval_close_navbar = null;
+        if(this.interval_close_navbar != null){
+            clearInterval(this.interval_close_navbar);
+            this.interval_close_navbar = null;
+        }
     }
 }
