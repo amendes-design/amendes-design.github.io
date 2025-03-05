@@ -1,6 +1,7 @@
 const isMobile = isMobileCheck();
 var menuButton = document.getElementsByClassName('menu-button')[0];
 var navbar = document.getElementsByClassName('navbar')[0];
+var interval_close_navbar = null;
 
 if(isMobile){
     enableMenu();
@@ -33,11 +34,16 @@ function enableMenu(){
     document.getElementsByClassName('navbar-content')[0].classList.add('active');
     document.getElementsByClassName('more')[0].classList.add('active');
 
-    // setInterval(disableMenu, 10000);
+    this.interval_close_navbar = setInterval(disableMenu, 5000);
 }
 
 function disableMenu(){
     document.getElementsByClassName('menu-button')[0].style.visibility = 'visible';
     document.getElementsByClassName('navbar-content')[0].classList.remove('active');
     document.getElementsByClassName('more')[0].classList.remove('active');
+
+    if(this.interval_close_navbar != null){
+        clearInterval(this.interval_close_navbar);
+        this.interval_close_navbar = null;
+    }
 }
